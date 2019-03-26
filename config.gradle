@@ -1,0 +1,20 @@
+ext {
+  android = [
+      compileVersion: 26,
+      minVersion: 19,
+      targetVersion: 23,
+
+      versionCode: "1",
+      versionName: "1.0.0"
+  ]
+
+  depsVersion = [
+      supportV7: '25.3.1',
+      recyclerview: '25.3.1'
+  ]
+
+  depsLibs = [
+      supportV7: "com.android.support:appcompat-v7:${depsVersion.supportV7}",
+      recyclerview: "com.android.support:recyclerview-v7:${depsVersion.recyclerview}@aar",
+  ]
+}

@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion rootProject.ext.android.compileVersion
+  defaultConfig {
+    applicationId "com.github.code"
+    minSdkVersion rootProject.ext.android.minVersion
+    targetSdkVersion rootProject.ext.android.targetVersion
+    versionCode 1
+    versionName rootProject.android.versionName
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  implementation fileTree(include: ['*.jar'], dir: 'libs')
+  implementation(rootProject.depsLibs.supportV7)
+  implementation(rootProject.depsLibs.recyclerview)
+  implementation project(':viewpager')
+  implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+}
