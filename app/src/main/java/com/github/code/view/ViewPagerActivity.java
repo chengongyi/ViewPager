@@ -85,7 +85,7 @@ public class ViewPagerActivity extends AppCompatActivity {
     @Override
     protected void bind(OrdinaryPagerAdapter.ViewHolderWrapper holder) {
       Button btnTest = holder.findViewById(R.id.btn_test);
-      btnTest.setText("玩玩");
+      btnTest.setText("玩玩玩玩玩玩");
     }
   }
 }
