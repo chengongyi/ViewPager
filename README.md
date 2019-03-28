@@ -44,7 +44,7 @@ private final class ImageModel extends OrdinaryPagerAdapter.ModelWrapper {
   }
   
   
-#   设置给Adapter以及添加点击或则长按事件
+#   设置Adapter以及添加点击/长按事件
   
   OrdinaryPagerAdapter adapter = new OrdinaryPagerAdapter();
   
